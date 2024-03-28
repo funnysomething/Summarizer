@@ -1,0 +1,6 @@
+#Ignore config file
+config.ini
+
+#Ignore cache files
+__pycache__
+
