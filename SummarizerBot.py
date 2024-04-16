@@ -25,6 +25,8 @@ async def on_ready():
 async def summarize(ctx, *, arg):
     try:
         num_messages = int(arg)
+        if (num_messages <= 0):
+            raise ValueError("Invalid num_messages")
         if (num_messages > 200):
             await ctx.send("Too many messages requested")
         else:
